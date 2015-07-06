@@ -21,7 +21,7 @@ public class BooksShelf extends ListActivity {
         List<Item> items = new ArrayList<Item>();
 
         for(int i = 0; i<10; i++) {
-            items.add(new Item("c1", "c2", "c3"));
+            items.add(new Item("c1", "c2", "c3","book name1 "+i, "book name2 "+i, "book name3 "+i));
         }
 
         shelfItemArrayAdapter = new ShelfItemArrayAdapter(BooksShelf.this,R.layout.activity_shelf_item,items);

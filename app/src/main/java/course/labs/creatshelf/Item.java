@@ -26,7 +26,7 @@ public class Item{
         return coverString3;
     }
 
-    public Item(String cover_1, String cover_2, String cover_3) {
+    public Item(String cover_1, String cover_2, String cover_3, String coverString1, String coverString2, String coverString3) {
         this.cover_1 = cover_1;
         this.cover_2 = cover_2;
         this.cover_3 = cover_3;
