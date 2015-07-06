@@ -30,6 +30,9 @@ public class Item{
         this.cover_1 = cover_1;
         this.cover_2 = cover_2;
         this.cover_3 = cover_3;
+        this.coverString1 = coverString1;
+        this.coverString2 = coverString2;
+        this.coverString3 = coverString3;
     }
 
     public String getCover_3() {

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -57,6 +58,14 @@ public class ShelfItemArrayAdapter extends ArrayAdapter<Item> {
             imageResource = c.getResources().getIdentifier(uri3, null, c.getPackageName());
             image = c.getResources().getDrawable(imageResource);
             iv3.setImageDrawable(image);
+
+            TextView tv1 = (TextView) v.findViewById(R.id.textView1);
+            TextView tv2 = (TextView) v.findViewById(R.id.textView2);
+            TextView tv3 = (TextView) v.findViewById(R.id.textView3);
+
+            tv1.setText(o.getCoverString1());
+            tv2.setText(o.getCoverString2());
+            tv3.setText(o.getCoverString3());
 
         }
         return v;
